@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Mentoria</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+        </header>
+        <form id="mentoria">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <div class="name">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="surname">Sobrenome</label>
+                        <input type="text" id="surname">
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email">Email <span>(digite um email válido)</span></label>
+                    <input type="email" name="" id="email">
+                </div>
+                <div class="input-wrapper">
+                    <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                    <input type="password" id="password">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Informações do mentor</legend>
+                <div class="input-wrapper">
+                    <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                    <input type="text" id="mentor">
+                </div>
+                    
+            </fieldset>
+            <fieldset>
+                <legend>Seus horários disponíveis</legend> 
+                <div class="mentor">
+                    <h2>Primeira mentoria</h2>    
+                    <div class="class-data">
+                        <div class="input-wrapper">
+                            <label for="day-one">Data <span>(DD/MM/AAAA)</span></label>
+                            <input  id="day-one" onfocus="this.type='date'" onfocusout="this.type='text'" placeholder="" required>
+                        </div>
+                        <div class="time">
+                            <div class="input-wrapper">
+                                <label for="day-one-start">Das</label>
+                               <input onfocus="this.type='time'" onfocusout="this.type='text'" placeholder="" id="day-one-start" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="day-one-end">Até</label>
+                               <input onfocus="this.type='time'" onfocusout="this.type='text'" placeholder="" id="day-one-end" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mentor">
+                    <h2>Segunda mentoria</h2> 
+                    <div class="class-data">
+                        <div class="input-wrapper">
+                            <label for="day-two">Data <span>(DD/MM/AAAA)</span></label>
+                            <input  id="day-two" onfocus="this.type='date'" onfocusout="this.type='text'" placeholder="">
+                        </div>
+                        <div class="time">
+                            <div class="input-wrapper">
+                                <label for="day-two-start">Das</label>
+                               <input onfocus="this.type='time'" onfocusout="this.type='text'" placeholder="" id="day-two-start">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="day-two-end">Até</label>
+                               <input onfocus="this.type='time'" onfocusout="this.type='text'" placeholder="" id="day-two-end">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="form-button">
+            <input type="submit" form="mentoria" value="Salvar">
+        </div>
+    </div>
+
+    
+</body>
+</html>
